@@ -1,0 +1,612 @@
+* {
+  font-family: Arial;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px;
+  background: white;
+}
+
+/*CSS slideshow*/
+a.slideshow {
+  font-size: 100%;
+  background: black; 
+  opacity: 0.75; 
+  padding: 4px ;
+  color: white ; 
+  text-decoration: none
+}
+h4.slide {
+  font-size: 120%;
+}
+/* CSS Menu*/
+.hovermenu {
+  padding-top: 15px;
+}
+nav {
+  background-color: hsl(144, 69%, 35%);
+}
+ul.menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+ul.menu > li {
+  min-width: 150px;
+  text-align: center;
+}
+ul.menu > li > a {
+  text-decoration: none;
+  display: block;
+  padding: 10px 15px;
+  color: black;
+}
+ul.menu > li:last-child {
+  margin-left: auto;
+}
+ul.menu > li > a.TC {
+  border-bottom: 5px inset black;
+}
+ul.menu > li > a:hover {
+  background-color: black;
+  color: white;
+  border-bottom: 5px inset black;
+}
+#menu-phone {
+  display: none;
+}
+            /*media*/
+    @media screen and (max-width: 900px) {
+      ul.menu > li {
+        width: 100%;
+        text-align: left;
+      }
+      ul.menu > li > a:first-child {
+        border-bottom: none;
+      }
+      ul.menu > li > a:hover{
+        border-bottom: none;
+      }
+      #submenu-phone {
+        display: none;
+      }
+      #menu-phone {
+        display: block;
+        background-color: black;
+        padding: 10px 15px;
+      }
+      div.myMenu > a{
+      color: white;
+      }
+    }
+    @media screen and (max-width: 400px) {
+      ul.menu > li > a {
+        font-size: 13px;
+      }
+    }
+/* CSS muc 1*/
+.col70 {
+  width: 70%;
+  padding: 10px;
+}
+.col30 {
+  width: 30%;
+}
+section.muc1 {
+  display: flex;
+}
+
+/* CSS subject */
+
+h1.subject {
+  text-align: center;
+  font-size: 16px;
+  color: black;
+  background-color: hsl(144, 69%, 35%);
+  padding: 5px;
+  margin-bottom: 10px;
+}
+h1.cap1 {
+  width: 120px;
+}
+h1.cap2 {
+  width: 160px;
+}
+h1.cap3 {
+  width: 100px;
+}
+h1.cap4 {
+  width: 130px;
+}
+/* Css chung */
+h6 {
+  font-size: 85%;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+p, button {
+  font-size: 80%;
+}
+time {
+  font-size: 77%;
+}
+a {
+  color: black;
+}
+a:hover {
+  color: green;
+}
+
+/* CSS icon star*/
+.td-module-meta-info {
+  font-size: 5px;
+  margin-bottom: 7px;
+  line-height: 1;
+  min-height: 17px;
+}
+.entry-review-stars {
+  display: inline-block;
+  position: relative;
+  top: 1px;
+}
+.entry-review-stars > img {
+  width: 20px;
+}
+/*CSS date*/
+.td-post-date {
+  color: #aaa;
+  display: inline-block;
+  position: relative;
+  top: 1px;
+  font-size: 11px;
+}
+/*CSS bigBox*/
+.col55 {
+  width: 55%;
+  padding: 10px;
+  height: 60%;
+}
+.col45 {
+  width: 45%;
+  padding: 10px;
+  height: 60%;
+}
+section.bigBox {
+  display: flex;
+}
+
+.item3 > a {
+  font-size: 20px;
+  font-weight: bold;
+}
+.BanDao > a > img {
+  width: 100%;
+  height: 60%;
+  padding: 5px 12px 15px;
+}
+.BanDao > a > img:hover {
+  transition: transform ease-in-out 0.5s;
+  transform: scale(1.1);
+}
+div.col45 {
+  display: inline-block;
+  flex-wrap: wrap;
+}
+div.box1 {
+  height: 100px;
+  font-size: 15px;
+}
+.boxItem1 > img {
+  padding-right: 5px;
+  width: 45%;
+  height: 80px;
+  float: left;
+}
+.boxIteam1 > img:hover {
+  transition: transform ease-in-out 0.5s;
+  transform: scale(1.1);
+}
+
+/* CSS smallBox*/
+div.smallBox {
+  display: flex;
+}
+
+div.boxsize {
+  padding: 5px;
+  width: 50%;
+  display: inline-block;
+  flex-wrap: wrap;
+}
+div.product {
+  width: 50%;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 1%;
+}
+div.product > img {
+  width: 100%;
+  height: auto;
+}
+div.product > img:hover {
+  transition: transform ease-in-out 0.5s;
+  transform: scale(1.1);
+}
+div.info {
+  padding: 10px;
+}
+div.info > a {
+    font-size: 18px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+div.info > h5 {
+    font-size: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+div.box1 > a {
+  font-size: 15px;
+}
+/* CSS cot 2*/
+.listBox {
+  height: 480px;
+}
+#listBox-1 {
+  height: 240px;
+  display: none;
+}
+#listBox-2 {
+  height: 245px;
+  display: none;
+}
+div.bookmart {
+  display: inline-block;
+  flex-wrap: wrap;
+}
+div.capA > div {
+  padding: 2px;
+  width: 100%;
+  height: 80px;
+}
+a.itemA {
+  width: 160px;
+  height: 60px;
+}
+img.itemB {
+  padding-right: 3px;
+  width: 100px;
+  height: 70px;
+  float: left;
+}
+.xem-them {
+  text-align: center;
+  font-size: 12px;
+  opacity: 0.60; 
+}
+#button-xem-them {
+  display: block;
+}
+#button-xem-them-2 {
+  display: none;
+}
+#button-xem-them-3 {
+  display: none;
+}
+/*CSS quang cao*/
+.quangcao {
+  padding: 20px;
+  position: relative;
+  text-align: center;
+}
+.number1 > div > a > img {
+  height: 50%;
+  width: 100%;
+}
+.number3 > div > a > img {
+  height: 100%;
+  width: 100%;
+}
+div.backgroud-quangCao  {
+  margin: auto;
+  height: 80%;
+  width: 80%;
+}
+.number2 > div > a > img {
+  height: 100%;
+  width: 100%;
+}
+ .b-button-QC {
+  font-size: x-small;
+  width: 80%;
+  text-align: right;
+  margin: auto;
+  opacity: 0.6;
+}
+.fa, .fas {
+  font-size: xx-small;
+}
+
+#hideIcon {
+  padding: 40px;
+  background: lightgrey;
+  display: none;
+}
+#hideIcon-1 {
+  padding: 40px;
+  background: lightgrey;
+  display: none;
+}
+#hideIcon-2 {
+  padding: 40px;
+  background: lightgrey;
+  display: none;
+}
+/*CSS video*/
+.video {
+  padding: 20px;
+  text-align: center;
+}
+.video > iframe {
+  width: 300px;
+  height: 230px;
+}
+@media screen and (max-width: 360px){
+  .video > iframe {
+    width: 100%;
+    height: 70%;
+  }
+}
+/*media*/
+
+      /*slideshow*/
+@media screen and (max-width: 450px) {
+  a.slideshow {
+    font-size: 8px;
+  }
+  h4.slide {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 870px) {
+  body {
+    width: 100%;
+  }
+  section.muc1 {
+    display: inline;
+  }
+  .col70 {
+    width: 100%;
+    padding: 10px;
+  }
+  .col30 {
+    width: 100%;
+  }
+  .number2 > div > a > img  {
+    height: 60%;
+    width: 60%;
+  }
+  .ss1 {
+    width: 50%;
+  }
+  .number3 {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 570px) {
+  .col55 {
+    width: 100%;
+  }
+  .col45 {
+    width: 100%;
+  }
+  section.bigBox {
+    display: block;
+  }
+  .boxItem1 > img {
+    width: 90px;
+    height: 70px;
+  }
+  div.smallBox {
+    display: block;
+  }
+  div.product {
+    width: 100%;
+  }
+  div.boxsize {
+    width: 100%;
+  }
+  section.bigBox {
+    display: block;
+  }
+
+}
+@media screen and (max-width: 315px) {
+  h6, p, button {
+    font-size: 8px;
+  }
+  time {
+    font-size: 5px;
+  }
+  img.itemB {
+    width: 90px;
+    height: 70px;
+  }
+  div.box1 {
+    height: 90px;
+  }
+  
+  div.quangcao {
+    display: none;
+  }
+  input, textarea {
+    width: 90px !important;
+  }
+}
+@media screen and (max-width: 220px) {
+  img.itemB {
+    width: 80px;
+    height: 60px;
+  }
+  .boxItem1 > img {
+    width: 80px;
+    height: 60px;
+  }
+  .boxIteam1 {
+    padding: 2px;
+  }
+  div.box1 {
+    height: 80px;
+  }
+  div.video {
+    display: none;
+  }
+  h1.subject {
+    font-size: 7px;
+    width: 100px;
+  }
+}
+/*footer*/
+footer {
+  background-color: black;
+  padding: 15px;
+  color: black;
+}
+footer > h3 {
+  text-align: center;
+  color:hsl(144, 69%, 35%); 
+}
+.colfooter {
+  background: hsl(144, 69%, 35%);
+}
+.coll {
+  display: inline-flex;
+}
+label {
+  text-align: left;
+}
+.col20 {
+  width: 20%;
+  text-align: center;
+  margin: auto;
+}
+.col40 {
+  width: 40%;
+  padding: 10px;
+}
+.col40 > h5 {
+  margin: 30px;
+  text-align: center;
+}
+form {
+  padding-right: 40px;
+  text-align: center;
+}
+img.iconFooter {
+  width: 150px;
+  height: 150px;
+}
+.iconLienHe {
+  text-align: center;
+}
+@media screen and (max-width: 790px) {
+  .col20 {
+    display: none;
+  }
+  .col40{
+    width: 50%;
+  }
+  form {
+   text-align: center;
+  }
+  
+  img.iconFooter {
+    display: none;
+  }
+  .contact1 {
+    font-size: 70%;
+  }
+  .contact1 > h5 {
+    font-size: 95%;
+    margin: 4px;
+  }
+   label, input, textarea {
+    width: 150px;
+    font-size: 60%;
+  }
+  input.submit-lienhe {
+    width: 30px;
+    text-align: center;
+  }
+  div.col50 > strong {
+    font-size: 80%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .coll {
+    display: block;
+  }
+  .col40 {
+    width: 100%;
+  }
+  div.info > h5 {
+    font-size: 10px;
+  }
+  .item3 > a {
+    font-size: 14px;
+  }
+  div.info > a {
+    font-size: 14px;
+  }
+  .entry-review-stars > img {
+    width: 13px;
+  }
+  img.item3 {
+    width: 100px;
+    height: 76px;
+  }
+  /*icon quang cao*/
+  i.fas.fa-spinner.fa-pulse {
+    font-size: 90px !important;
+  }
+}
+.iconLienHe > a > img {
+  width: 20px;
+}
+@media screen and (max-width: 150px) {
+  div.box1 {
+    height: 130px;
+  }
+  div.listBox {
+    height: 705px;  
+  }
+  #listBox-1 {
+    height: 330px;
+  }
+  #listBox-2 {
+    height: 330px;
+  }
+  div.capA > div {
+    height: 120px;
+    text-align: center;
+  }
+  img.itemB {
+    float: none;
+    padding: 2px;
+  }
+  input, textarea {
+    width: 50px !important;
+  }
+}
